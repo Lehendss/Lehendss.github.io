@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Diario | Post</title>
+    <!--FavIcon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icon.png">
+
+    <!--Remix Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--Swiper.js styles-->
+    <link rel="stylesheet" href="../assets/js/swiper-bundle.min.js">
+
+    <!--Custom styles-->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+</head>
+
+<body>
+
+    <!--Password required by modal blog.html-->
+    <div class="modal" id="password-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+                <form id="password-form">
+                <label for="password">Ingresa la contraseña baby!</label>
+                <input type="password" id="password-input" name="password">
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+    </div>
+
+    <!--Header-->
+    <header class="header" id="header">
+
+        <nav class="navbar container">
+            <a href="../index.html">
+                <h2 class="logo">Diario</h2>
+            </a>
+
+            <div class="menu" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="../index.html" class="list-link current">Inicio</a> 
+                    </li>
+
+                    <li class="list-item">
+                        <a href="./blog.html" class="list-link">Blog Diario</a>
+                    </li>
+
+                    <li class="list-item">
+                
+                        <!-- Set "id for password"  -->
+                        <a href=".cartasDeDomingo.html" class="list-link" id="cartas-link">Cartas de Domingo</a>
+
+                    </li>
+
+                    <li class="list-item">
+                        <a href="./viajes.html" class="list-link">Viajes</a>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="list list-right">
+
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+
+                <button class="btn place-items-center" id="search-icon">
+                    <i class="ri-search-line"></i> 
+                </button>
+
+                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                    
+                </button>
+
+
+            </div>
+        </nav>
+    
+        
+    </header>
+    <!--Search-->
+    <div class="search-form-container container" id="search-form-container">
+        
+        <div class="form-container-inner">
+        
+            <form action="" class="form">
+        
+                <input type="text" class="form-input" placeholder="Que miras bebe?">
+        
+                <button class="btn form-btn" type="submit">
+                    <i class="ri-search-line"></i>
+        
+                </button>
+            </form>
+            <span class="form-note">Or press ESC to close</span>
+
+        </div>
+
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </button>
+
+       
+    </div>
+ <!--Blooogg-->
+
+ <!--Footer-->>
+ <footer class="footer section">
+        
+    <div class="footer-container container d grid">
+
+        <div class="company data">
+            <a href="../index.html">
+                <h2 class="logo">Diario</h2>
+            </a>
+             
+            <p class="company-description">
+                Lorem ipsum dolor si
+            </p>
+            <ul class="list social-media">
+                <li class="list-item">
+
+                    <a href="https://github.com/Lehendss" class="list-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+
+                </li>
+            </ul>
+            <span class="copyright-notice"> &copy; 2023. Lehends. All rights reserved. </span>
+        </div>
+
+
+    </div>
+</footer>
+ <!-- Custom script -->
+ <script src="../assets/js/main.js"></script>
+ <script src="../assets/js/authenticationForPages.js"></script>
+
+</body>
+
+</html>
