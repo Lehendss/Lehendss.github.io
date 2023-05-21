@@ -1,5 +1,6 @@
 /*Import fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;40family0;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
 
 /*Custom properties */
 
@@ -11,7 +12,7 @@
     --hover-light-color: var(--light-color);
     --hover-dark-color: var(--primary-background-color);
     --gradient-color: linear-gradient(
-        115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+        115deg,#d12020,#cea916,#8633da,#12bcfe,#1adf7c);
     --transparent-light-color: rgba(255,255,255,.05);
     --transparent-dark-color: rgba(0,0,0,.75);
     --font-family: 'Libre Baskerville', serif;
@@ -294,7 +295,7 @@ body.light-theme
 .form-note
 {
     font-size: var(--font-size-xsm);
-    align-self: flex-end;
+    align-self: flex;
 }
 .form-close-btn
 {
@@ -607,9 +608,61 @@ body.light-theme
     background-color: #2e303b;
 }
 
+/*cartas de Domingo*/
+.blog-post
+{
+    padding-bottom: 5rem;
+}
 
+.blog-post-data
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-block: 2.5rem;
+
+}
+
+.blog-post-title
+{
+   font-size: clamp(3rem, 5vw, 6rem);
+}
+
+.blog-post-data .article-data
+{
+    margin-bottom: 2.5rem;
+}
+
+.blog-post-container .container
+{
+    max-width: 90rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.quote
+{
+    background-color: var(--secondary-background-color);
+    padding: 2.5rem;
+}
+
+.quote p
+{
+    font-family: 'Lobster Two', cursive;;
+    font-style: italic;
+    text-align: center;
+}
+
+.quote span i
+{
+    font-size: 4rem;
+}
 /* Estilos para el modal */
-.modal {
+.modal
+ {
     display: none;
     position: fixed;
     z-index: 9999;
@@ -621,7 +674,8 @@ body.light-theme
     background-color: rgba(0, 0, 0, 0.5);
   }
   
-  .modal-content {
+  .modal-content 
+  {
     background-color: rgb(248, 242, 242);
     margin: 15% auto;
     padding: 20px;
@@ -630,52 +684,62 @@ body.light-theme
     max-width: 500px;
   }
   
-  form {
+  form 
+  {
     display: flex;
     flex-direction: column;
     align-items: center;
 
   }
   
-  label {
+  label 
+  {
     margin-bottom: 10px;
   }
   
-  input {
+  input 
+  {
     margin-bottom: 20px;
   }
   
   
-  button:focus {
+  button:focus 
+  {
     outline: none;
   }
   
- #password-input {
+ #password-input 
+ {
     width: 200px;
-  }
+ }
   
-  #password-input {
+  #password-input
+  {
     color: black
   }
   
   /* Establece un borde sólido de 2 píxeles de ancho alrededor del campo de entrada de la contraseña */
-  #password-input {
+  #password-input 
+  {
     border: 2px solid rgb(43,74,109);
   }
   
   /* Establece un borde rojo sólido de 2 píxeles de ancho alrededor del campo de entrada de la contraseña cuando está enfocado */
-  #password-input:focus {
+  #password-input:focus 
+  {
     border: 2px solid red;
   }
   
   /* Cambia el tamaño de la fuente del texto del campo de entrada de la contraseña */
-  #password-input {
+  #password-input 
+  {
     font-size: 16px;
   }
 
   
 
-  label[for="password"] {
+  label[for="password"] 
+  {
     color: rgb(43, 74, 109);
   }
   
