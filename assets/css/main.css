@@ -187,6 +187,7 @@ body.light-theme
 
 .btn
 {
+
     cursor: pointer;
 }
 
@@ -275,28 +276,35 @@ body.light-theme
 .form-btn
 {
     display: inline-block;
+    outline: none;
     border: 2px solid var(--secondary-background-color);
     padding: 1.5rem;
+    color: var(--light-color);
 }
 
 .form-input
 {
     border-right: none;
     width: 100%;
+    background-color: var(--primary-background-color);
 }
+
+
 .form-btn
 {
     margin-left: -.5rem;
     border-left: none;
     background-color: var(--secondary-background-color);
+    text-transform: uppercase;
     width: 8rem;
 }
 
 .form-note
 {
     font-size: var(--font-size-xsm);
-    align-self: flex;
+    align-self: flex-end;
 }
+
 .form-close-btn
 {
     position: absolute;
@@ -305,6 +313,7 @@ body.light-theme
     border: 2px solid var(--secondary-background-color);
     width: 4rem;
     height: 4rem;
+    display: flex ;
 }
 
 /*Form JavaScript styles*/
@@ -553,17 +562,20 @@ body.light-theme
 
 .company-description
 {
+    
     margin-block: var(--margin-sm);
     max-width: 75%;
 }
 
 .social-media
 {
+    
     margin-bottom: var(--margin-md);
 }  
 
 .copyright-notice
 {
+    
     opacity: .8;
 }
 
@@ -684,7 +696,7 @@ body.light-theme
     max-width: 500px;
   }
   
-  form 
+  #password-form 
   {
     display: flex;
     flex-direction: column;
@@ -697,12 +709,12 @@ body.light-theme
     margin-bottom: 10px;
   }
   
-  input 
+  .password-form-id
   {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
-  
-  
+ 
+ 
   button:focus 
   {
     outline: none;
@@ -727,7 +739,7 @@ body.light-theme
   /* Establece un borde rojo sólido de 2 píxeles de ancho alrededor del campo de entrada de la contraseña cuando está enfocado */
   #password-input:focus 
   {
-    border: 2px solid red;
+    border: 2px solid rgb(167, 163, 163);
   }
   
   /* Cambia el tamaño de la fuente del texto del campo de entrada de la contraseña */
