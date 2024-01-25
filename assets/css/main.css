@@ -146,9 +146,9 @@ body.light-theme
 
 .logo-image
 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position:sticky;
+    width: 10%;
+    height: 10%;
     object-fit: cover;
     transition: transform .25s;   
 }
