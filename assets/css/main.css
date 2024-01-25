@@ -149,7 +149,7 @@ body.light-theme
     position:sticky;
     width: 10%;
     height: 10%;
-    object-fit: cover;
+    object-fit:cover;
     transition: transform .25s;   
 }
 
