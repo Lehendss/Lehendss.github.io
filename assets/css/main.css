@@ -144,10 +144,13 @@ body.light-theme
     padding-block: 1.5rem;
 }
 
-.logo
+.logo-image
 {
-    font-size: var(--font-size-md);
-    color: var(--light-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .25s;   
 }
 
 .menu
